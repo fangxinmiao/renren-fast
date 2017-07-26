@@ -3,6 +3,7 @@ package io.renren.modules.sys.dao;
 import io.renren.modules.sys.entity.SysConfigEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * 系统配置信息
@@ -12,6 +13,7 @@ import org.apache.ibatis.annotations.Param;
  * @date 2016年12月4日 下午6:46:16
  */
 @Mapper
+@Repository
 public interface SysConfigDao extends BaseDao<SysConfigEntity> {
 
     /**

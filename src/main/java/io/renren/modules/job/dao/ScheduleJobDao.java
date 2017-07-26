@@ -3,6 +3,7 @@ package io.renren.modules.job.dao;
 import io.renren.modules.job.entity.ScheduleJobEntity;
 import io.renren.modules.sys.dao.BaseDao;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.Map;
 
@@ -14,6 +15,7 @@ import java.util.Map;
  * @date 2016年12月1日 下午10:29:57
  */
 @Mapper
+@Repository
 public interface ScheduleJobDao extends BaseDao<ScheduleJobEntity> {
 
     /**
